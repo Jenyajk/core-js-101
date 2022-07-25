@@ -97,11 +97,12 @@ function getSumBetweenNumbers(/* n1, n2 */) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(a, b, c) {
-  if (a + b <= c) return false;
-  if (a + c <= b) return false;
-  if (c + b <= a) return false;
-  return true;
+function isTriangle(/* a, b, c */) {
+  // if (a + b <= c) return false;
+  // if (a + c <= b) return false;
+  // if (c + b <= a) return false;
+  // return true;
+  throw new Error('Not implemented');
 }
 
 
@@ -364,6 +365,7 @@ function getCommonDirectoryPath(/* pathes */) {
   //   if (arr[0][i] !== arr[arr.length - 1][i]) return arr[0].slice(0, arr[arr.length - 1].lastIndexOf('/', i) + 1);
   // }
   // return arr[0];
+  throw new Error('Not implemented');
 }
 
 
