@@ -72,12 +72,12 @@ function getFactorial(n) {
  *   5,10  =>  45 ( = 5+6+7+8+9+10 )
  *   -1,1  =>  0  ( = -1 + 0 + 1 )
  */
-function getSumBetweenNumbers(n1, n2) {
-  let result = 0;
-  for (let i = n1; i <= n2; i += 1) {
-    result += i;
-  }
-  return result;
+function getSumBetweenNumbers(/* n1, n2 */) {
+  // let result = 0;
+  // for (let i = n1; i <= n2; i += 1) {
+  //   result += i;
+  // }
+  // return result;
 }
 
 
@@ -96,11 +96,11 @@ function getSumBetweenNumbers(n1, n2) {
  *   10,1,1   =>  false
  *   10,10,10 =>  true
  */
-function isTriangle(a, b, c) {
-  if (a + b <= c) return false;
-  if (a + c <= b) return false;
-  if (c + b <= a) return false;
-  return true;
+function isTriangle(/* a, b, c */) {
+  // if (a + b <= c) return false;
+  // if (a + c <= b) return false;
+  // if (c + b <= a) return false;
+  // return true;
 }
 
 
@@ -356,12 +356,13 @@ function toNaryString(num, n) {
  *   ['/web/assets/style.css', '/.bin/mocha',  '/read.me'] => '/'
  *   ['/web/favicon.ico', '/web-scripts/dump', '/verbalizer/logs'] => '/'
  */
-function getCommonDirectoryPath(pathes) {
-  const arr = pathes.sort();
-  for (let i = 0; i < arr[0].length; i += 1) {
-    if (arr[0][i] !== arr[arr.length - 1][i]) return arr[0].slice(0, arr[arr.length - 1].lastIndexOf('/', i) + 1);
-  }
-  return arr[0];
+function getCommonDirectoryPath(/* pathes */) {
+  // const arr = pathes.sort();
+  // for (let i = 0; i < arr[0].length; i += 1) {
+  // eslint-disable-next-line max-len
+  //   if (arr[0][i] !== arr[arr.length - 1][i]) return arr[0].slice(0, arr[arr.length - 1].lastIndexOf('/', i) + 1);
+  // }
+  // return arr[0];
 }
 
 
