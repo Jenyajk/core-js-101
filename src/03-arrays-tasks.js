@@ -207,8 +207,9 @@ function getTail(arr, n) {
  *    +'20,21,22,23,24\n'
  *    +'30,31,32,33,34'
  */
-function toCsvText(/* arr */) {
-  throw new Error('Not implemented');
+function toCsvText(arr) {
+  // eslint-disable-next-line no-return-assign, no-param-reassign
+  return arr.reduce((acc, value, index) => (acc += index === arr.length - 1 ? `${value.join(',')}` : `${value.join(',')}\n`), '');
 }
 
 /**
@@ -303,8 +304,8 @@ function propagateItemsByPositionIndex(/* arr */) {
  *   [ 1,2,3,4,5,6,7,8,9,10 ] => [ 10, 9, 8 ]
  *   [ 10, 10, 10, 10 ] => [ 10, 10, 10 ]
  */
-function get3TopItems(/* arr */) {
-  throw new Error('Not implemented');
+function get3TopItems(arr) {
+  return arr.sort((a, b) => (a < b ? 1 : -1)).slice(0, 3);
 }
 
 
