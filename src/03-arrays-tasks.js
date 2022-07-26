@@ -325,8 +325,10 @@ function get3TopItems(arr) {
  *   [ null, 1, 'elephant' ] => 1
  *   [ 1, '2' ] => 1
  */
-function getPositivesCount(/* arr */) {
-  throw new Error('Not implemented');
+function getPositivesCount(arr) {
+  const k = arr.filter((e) => Number.isInteger(e));
+  const s = k.filter((el) => el > 0);
+  return s.length;
 }
 
 /**
